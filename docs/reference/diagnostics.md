@@ -22,7 +22,7 @@ If needed, you can get JSON output from the diagnostic service, instead of HTML:
 
 ## Health status
 
-Ambassador displays the health of a service in the diagnostics UI. Health is computed as successful requests / total requests and expressed as a percentage. The total requests comes from nvoy `upstream_rq_pending_total` stat. Successful requests is calculated by substracting `upstream_rq_4xx` and `upstream_rq_5xx` from the total. 
+Ambassador displays the health of a service in the diagnostics UI. Health is computed as successful requests / total requests and expressed as a percentage. The total requests comes from Envoy `upstream_rq_pending_total` stat. Successful requests is calculated by substracting `upstream_rq_4xx` and `upstream_rq_5xx` from the total. 
 
 Red is used when the success rate ranges from 0% - 70%.
 Yellow is used when the success rate ranges from 70% - 90%.
